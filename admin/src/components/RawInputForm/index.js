@@ -21,7 +21,7 @@ function RawInputForm({ onSubmit }) {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    console.log( ev );
+    console.log( "rawsubmitev", ev );
     onSubmit({
       data: rawText,
       type: rawFormat,
