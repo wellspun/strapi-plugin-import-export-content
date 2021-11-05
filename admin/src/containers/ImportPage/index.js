@@ -52,6 +52,7 @@ function ImportPage({ contentTypes }) {
 
     // Send Request
     try {
+    console.log( "analData2", data );
       setIsLoadig(true);
       const response = await request(`/${pluginId}/pre-analyze`, {
         method: "POST",
