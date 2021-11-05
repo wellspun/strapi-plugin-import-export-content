@@ -82,6 +82,8 @@ function ImportPage({ contentTypes }) {
     setTarget(null);
   };
 
+  console.log( "testImportPage" );
+
   return (
     <Block
       title="General"
