@@ -4,6 +4,7 @@ const importToCollectionType = async (uid, item) => {
     // await strapi.query(uid).create(item);
     return true;
   } catch (error) {
+    console.error( { e: error.data.errors } );
     return false;
   }
 };
@@ -20,6 +21,7 @@ const importToSingleType = async (uid, item) => {
     }
     return [true];
   } catch (error) {
+    console.error( { e: error.data.errors } );
     return [false];
   }
 };
