@@ -41,6 +41,8 @@ function ImportPage({ contentTypes }) {
   const [target, setTarget] = useState(null);
   const [isLoading, setIsLoadig] = useState(false);
   const analizeImports = async ({ data, type }) => {
+    console.log( "analData", data );
+
     // Prevent Empty Destination
     if (importDest === "")
       return strapi.notification.toggle({
@@ -51,7 +53,6 @@ function ImportPage({ contentTypes }) {
     // Send Request
     try {
       setIsLoadig(true);
-      console.log( "analData", data );
       const response = await request(`/${pluginId}/pre-analyze`, {
         method: "POST",
         body: { data, type },
