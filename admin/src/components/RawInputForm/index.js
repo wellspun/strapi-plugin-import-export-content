@@ -33,8 +33,6 @@ function RawInputForm({ onSubmit }) {
     console.log( "setRawText:", rawText );
   }, [rawText] );
 
-  console.log( "test" );
-
   return (
     <form className="col-12" onSubmit={handleSubmit}>
       <Row>
