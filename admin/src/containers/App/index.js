@@ -33,6 +33,8 @@ const navLinks = [
 function App() {
   const userContentTypes = useContentTypes();
 
+  console.log( "inApp" );
+
   return (
     <Layout navLinks={navLinks}>
       <Switch>
