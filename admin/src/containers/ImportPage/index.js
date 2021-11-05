@@ -51,6 +51,7 @@ function ImportPage({ contentTypes }) {
     // Send Request
     try {
       setIsLoadig(true);
+      console.log( "analData", data );
       const response = await request(`/${pluginId}/pre-analyze`, {
         method: "POST",
         body: { data, type },
@@ -81,8 +82,6 @@ function ImportPage({ contentTypes }) {
     setAnalysis(null);
     setTarget(null);
   };
-
-  console.error( "testImportPage" );
 
   return (
     <Block
