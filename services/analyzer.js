@@ -4,6 +4,7 @@ const {
 } = require("./utils/fieldUtils");
 
 function analyze(items) {
+  console.log( items );
   const fieldsFormats = {};
   const fieldNames = getFieldsFromItems(items);
   fieldNames.forEach((fieldName) => (fieldsFormats[fieldName] = []));
