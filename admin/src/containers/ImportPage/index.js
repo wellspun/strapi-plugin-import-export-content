@@ -82,7 +82,7 @@ function ImportPage({ contentTypes }) {
     setTarget(null);
   };
 
-  console.log( "testImportPage" );
+  console.error( "testImportPage" );
 
   return (
     <Block
