@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState, memo, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import { EditorWrapper } from "./styles";
@@ -28,6 +28,10 @@ function RawInputForm({ onSubmit }) {
       type: rawFormat,
     });
   };
+
+  useEffect( () => {
+    console.log( "setRawText:", rawText );
+  }, [rawText] );
 
   return (
     <form className="col-12" onSubmit={handleSubmit}>
