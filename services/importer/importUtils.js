@@ -1,5 +1,6 @@
 const importToCollectionType = async (uid, item) => {
   try {
+    console.log( 'uid', uid, 'item', item );
     await strapi.entityService.create({ data: item }, { model: uid });
     // await strapi.query(uid).create(item);
     return true;
