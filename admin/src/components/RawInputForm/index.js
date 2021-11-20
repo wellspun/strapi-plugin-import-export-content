@@ -21,17 +21,17 @@ function RawInputForm({ onSubmit }) {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    console.log( "rawsubmitev", ev );
-    console.log( "rawText", rawText );
+    // console.log( "rawsubmitev", ev );
+    // console.log( "rawText", rawText );
     onSubmit({
       data: rawText,
       type: rawFormat,
     });
   };
 
-  useEffect( () => {
-    console.log( "setRawText:", rawText );
-  }, [rawText] );
+  // useEffect( () => {
+  //   // console.log( "setRawText:", rawText );
+  // }, [rawText] );
 
   return (
     <form className="col-12" onSubmit={handleSubmit}>

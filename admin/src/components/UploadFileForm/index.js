@@ -35,7 +35,7 @@ function UploadFileForm({ onSubmit }) {
   // Form Controls
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    console.log( "ev", ev, "rawData", data );
+    // console.log( "ev", ev, "rawData", data );
     onSubmit({ data, type: file.type });
   };
 
